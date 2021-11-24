@@ -1,7 +1,7 @@
 # URL Shortener and Counter
 PHP test task for [Jobtome](https://jobtome.com/)
 
-Stack: PHP 7.4, Symfony 5, Docrtine MongoDB ODM
+Stack: PHP 7.4, Symfony 5, Doctrine MongoDB ODM
 
 ## Task description:
 Could be found [here](TASK.md)
