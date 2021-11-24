@@ -18,7 +18,4 @@ RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 RUN git config --global user.email "denysaw@gmail.com" \
     && git config --global user.name "Denys Salamatov"
 
-RUN chown -R www-data /var/www
-RUN chmod -R 777 /var/www/var
-
 RUN usermod -u 1000 www-data
