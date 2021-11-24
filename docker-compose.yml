@@ -24,6 +24,7 @@ services:
       - "9000"
     volumes:
       - .:/var/www
+      - ./var:/var/www/var
     working_dir: /var/www
     depends_on:
       - mongo
