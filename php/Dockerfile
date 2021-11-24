@@ -7,7 +7,7 @@ RUN apt update \
     && docker-php-ext-enable apcu \
     && docker-php-ext-configure zip \
     && docker-php-ext-install zip \
-    && usermod -u 1000 www-data
+    && usermod -u 1000 root
 
 RUN pecl install mongodb && docker-php-ext-enable mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/php.ini
