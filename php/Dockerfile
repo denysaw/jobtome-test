@@ -6,7 +6,7 @@ RUN apt update \
     && pecl install apcu \
     && docker-php-ext-enable apcu \
     && docker-php-ext-configure zip \
-    && docker-php-ext-install zip
+    && docker-php-ext-install zip \
     && usermod -u 1000 www-data
 
 RUN pecl install mongodb && docker-php-ext-enable mongodb
