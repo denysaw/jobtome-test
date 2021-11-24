@@ -13,7 +13,7 @@ Free 80 port on localhost
 ```bash
 docker-compose up -d
 ```
-and check SwaggerUI at: `http://localhost/api/doc`
+and check SwaggerUI at: `http://localhost/api/doc` (wait until dependencies gonna be installed and 502 error will gone:)
 
 ## How to run tests:
 ```bash
