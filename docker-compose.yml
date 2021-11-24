@@ -18,7 +18,7 @@ services:
 
   php:
     build: ./php
-    command: sh -c "composer config extra.symfony.allow-contrib true ; composer install ; php-fpm"
+    command: sh -c "composer config extra.symfony.allow-contrib true ; composer install ; chmod -R 0777 var ; php-fpm"
     restart: always
     expose:
       - "9000"
