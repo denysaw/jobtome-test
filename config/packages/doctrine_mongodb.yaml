@@ -6,6 +6,8 @@ doctrine_mongodb:
             server: '%env(resolve:MONGODB_URL)%'
             options: {}
     default_database: '%env(resolve:MONGODB_DB)%'
+    proxy_dir: "/tmp/doctrine/odm/mongodb/Proxies"
+    hydrator_dir: "/tmp/doctrine/odm/mongodb/Hydrators"
     document_managers:
         default:
             auto_mapping: true
